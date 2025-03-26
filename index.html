@@ -2,23 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="hello">
-        <div class="row">
-            <div class="col-12">
-                  hello
-            </div>
-            <div class="col-12">
-                kese ho
-            </div>
-            <div class="col-12">
-                thik hai sab
-            </div>
+    <header class="hero">
+        <h1>Welcome to Our Website</h1>
+        <p>Your solution for an amazing experience.</p>
+        <button onclick="scrollToSection()">Learn More</button>
+    </header>
+    
+    <section class="features" id="features">
+        <h2>Our Features</h2>
+        <div class="feature">
+            <h3>Feature 1</h3>
+            <p>Awesome description of the feature.</p>
         </div>
-    </div>
+        <div class="feature">
+            <h3>Feature 2</h3>
+            <p>Another amazing feature description.</p>
+        </div>
+    </section>
+    
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <p>"This website changed my life!" - Happy Customer</p>
+    </section>
+    
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <script>
+        function scrollToSection() {
+            document.getElementById('features').scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
 </body>
 </html>
